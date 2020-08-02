@@ -6,3 +6,216 @@
 * {
   box-sizing: border-box;
 }
+
+/*HEADING FORMATTING*/
+
+nav {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  font-family: "chicken_sans_bold";
+}
+
+h1 img {
+  width: 150px;
+  height: 50px;
+}
+
+#navlinks {
+  display: flex;
+  margin: 1rem;
+  font-size: 13pt;
+}
+
+#navlinks a {
+  text-decoration: none;
+  color: black;
+}
+
+#rightnav {
+  display: flex;
+}
+
+#rightnav a {
+  text-decoration: none;
+  color: white;
+}
+#shopping_bag img {
+  width: 20px;
+  height: 20px;
+}
+
+#shopping_bag {
+  color: rgb(191, 90, 9);
+  border: 0.05rem solid rgb(191, 90, 9);
+  border-radius: 40%;
+  padding: 0.5rem 1rem;
+}
+#signup {
+  background-color: rgb(191, 90, 9);
+  padding: 0.5rem 2.5rem;
+  border-radius: 40%;
+  color: white;
+}
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+nav li {
+  margin: 1rem;
+}
+
+body {
+  background-color: rgb(245, 242, 240);
+  font-family: "chicken_sans_bold";
+  margin: 0 0 0 0;
+}
+
+h2 {
+  color: white;
+  background-color: rgb(247, 125, 7);
+  text-align: center;
+  font-size: 6rem;
+  padding: 4rem;
+  margin: 0;
+}
+
+#subheading {
+  background-color: white;
+  font-family: Helvetica, sans-serif;
+  font-size: 11pt;
+  color: gray;
+  display: flex;
+  justify-content: center;
+  margin: 0.2rem;
+  padding: 0;
+  height: 20px;
+}
+
+#subheading li {
+  margin: 0.2rem 0.7rem 0.3rem 0;
+}
+
+h3 {
+  height: 150px;
+  text-align: center;
+  font-size: 22pt;
+  color: rgb(32, 32, 32);
+  padding: 1.5rem 16rem 1.5rem 16rem;
+  line-height: 2.7rem;
+}
+
+main {
+  max-width: 65rem;
+  margin: 3rem auto 3rem auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(14.3rem, 1fr));
+  grid-gap: 1rem;
+}
+
+section {
+  background-color: white;
+  height: 320px;
+  width: 250px;
+  display: grid;
+}
+
+section p {
+  color: rgb(191, 90, 9);
+  font-weight: bold;
+  font-family: Helvetica, sans-serif;
+  margin: 0rem 1rem;
+}
+
+section img {
+  height: 200px;
+  width: 250px;
+  object-fit: cover;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+h4 {
+  font-size: 14pt;
+  padding: 0 1rem;
+  margin: ;
+  color: black;
+}
+
+h4 a {
+  text-decoration: none;
+  color: black;
+}
+nav p {
+  font-family: Helvetica, sans-serif;
+  color: rgb(191, 90, 9);
+  font-weight: bold;
+  padding: 0 1rem;
+}
+
+footer {
+  background-color: rgb(32, 32, 32);
+  color: white;
+  height: 300px;
+}
+
+footer a {
+  color: white;
+}
+
+#footer_line_one {
+  display: flex;
+  font-size: 14pt;
+  justify-content: left;
+  align-items: left;
+  margin: 0;
+}
+#footer_line_two {
+  display: flex;
+  font-size: 9pt;
+}
+
+#footer_line_two li {
+  margin: 0 0 0 2.4rem;
+}
+
+footer li {
+  margin: 2rem 0 0 2.4rem;
+}
+p {
+  margin: 0 0 0 5rem;
+  font-size: 10.5pt;
+}
+#social_media {
+  display: flex;
+  margin: 1rem 0 0 2rem;
+}
+
+#social_media img {
+  height: 40px;
+  width: 40px;
+  background-color: rgb(191, 90, 9);
+  border-radius: 100%;
+  padding: 10px;
+}
+#social_media li {
+  margin: 0 0.5rem;
+}
+
+footer img {
+  height: 125px;
+  width: 150px;
+}
+
+#bottom {
+  display: flex;
+  justify-content: space-between;
+}
+#lovethatchicken {
+  height: 150px;
+  width: 200px;
+  margin: 0 10rem 0 0;
+}
