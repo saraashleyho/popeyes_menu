@@ -30,14 +30,74 @@ h1 img {
 
 #navlinks {
   display: flex;
-  margin: 1rem;
-  font-size: 13pt;
+  margin: 1rem 0rem;
+  font-size: 14pt;
   color: rgb(32, 32, 32);
+}
+
+#navlinks a:nth-child(1):hover {
+  color: rgb(100, 100, 100);
 }
 
 #navlinks a {
   text-decoration: none;
   color: black;
+}
+
+.dropbtn {
+  /*Dropdown Button */
+  background-color: white;
+  font-family: "chicken_sans_bold";
+  border: none;
+  font-size: 13pt;
+  cursor: pointer;
+}
+
+.dropbtn:hover {
+  color: rgb(100, 100, 100);
+}
+
+.dropdown {
+  /* Positions dropdown content */
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  /* Dropdown Content - Hidden by default*/
+  display: none;
+  position: absolute;
+  background-color: white;
+  font-family: "Helvetica Neue", sans-serif;
+  width: 300px;
+}
+
+.dropdown-content a {
+  margin: 20px 40px;
+  display: block;
+  text-decoration: none;
+  color: rgb(100, 100, 100);
+  font-size: 12pt;
+}
+
+.dropdown-content a:nth-child(1) {
+  margin-top: 50px;
+}
+.dropdown-content a:nth-child(2) {
+  padding: 0 0 20px 0;
+  border-bottom: 1px solid rgb(200, 200, 200);
+}
+.dropdown-content a:nth-child(4) {
+  padding: 0 0 20px 0;
+  border-bottom: 1px solid rgb(200, 200, 200);
+}
+.dropdown-content a:nth-child(5) {
+  padding: 0 0 20px 0;
+  border-bottom: 1px solid rgb(200, 200, 200);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 #rightnav {
@@ -60,7 +120,7 @@ h1 img {
 #shopping_bag {
   color: rgb(191, 90, 9);
   border: 0.05rem solid rgb(191, 90, 9);
-  border-radius: 40%;
+  border-radius: 1.5rem;
   padding: 0.5rem 1rem;
   cursor: pointer;
   width: 80px;
@@ -74,7 +134,8 @@ h1 img {
 #signup {
   background-color: rgb(191, 90, 9);
   padding: 0.5rem 2.5rem;
-  border-radius: 40%;
+  border-radius: 1.5rem;
+  border: 0.05rem solid rgb(191, 90, 9);
   color: white;
 }
 a {
@@ -86,7 +147,7 @@ li {
 }
 
 nav li {
-  margin: 0.8rem;
+  margin: 1rem 0.5rem;
 }
 
 #mainpage {
@@ -111,7 +172,7 @@ h2 {
 
 #subheading {
   background-color: white;
-  font-family: Helvetica, sans-serif;
+  font-family: "Helvetica Neue", sans-serif;
   font-size: 11pt;
   color: gray;
   display: flex;
@@ -133,7 +194,9 @@ h2 {
 
 h3 {
   height: 150px;
+  width: 80rem;
   text-align: center;
+  place-items: center;
   font-size: 22pt;
   color: rgb(32, 32, 32);
   padding: 1.5rem 16rem 1.5rem 16rem;
@@ -158,7 +221,7 @@ section {
 section p {
   color: rgb(191, 90, 9);
   font-weight: bold;
-  font-family: Helvetica, sans-serif;
+  font-family: "Helvetica Neue", sans-serif;
   margin: 0rem 1rem 1.5rem;
 }
 
@@ -182,7 +245,7 @@ h4 a {
   padding: 230px 60px 50px 0;
 }
 nav p {
-  font-family: Helvetica, sans-serif;
+  font-family: "Helvetica Neue", sans-serif;
   color: rgb(191, 90, 9);
   font-weight: bold;
   padding: 0 1rem;
@@ -195,7 +258,12 @@ footer {
 }
 
 footer a {
-  color: white;
+  color: whitesmoke;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  text-decoration-color: whitesmoke;
 }
 
 #footer_line_one {
@@ -205,13 +273,37 @@ footer a {
   align-items: left;
   margin: 0;
 }
+
+#footer_line_one li {
+  margin: 2rem 0 0 1.5rem;
+  border-right: 1px solid rgba(200, 200, 200, 0.5);
+  padding: 0 1rem 0 0;
+}
+
+#footer_line_one li:nth-child(1) {
+  margin: 2rem 0 0 2.4rem;
+}
+#footer_line_one li:nth-child(7) {
+  border: none;
+}
+
 #footer_line_two {
   display: flex;
   font-size: 9pt;
 }
 
 #footer_line_two li {
+  margin: 0 0 0 1.5rem;
+  border-right: 1px solid rgba(200, 200, 200, 0.5);
+  padding: 0 1rem 0 0;
+}
+
+#footer_line_two li:nth-child(1) {
   margin: 0 0 0 2.4rem;
+}
+
+#footer_line_two li:nth-child(7) {
+  border: none;
 }
 
 footer li {
@@ -227,12 +319,17 @@ p {
 }
 
 #social_media img {
-  height: 40px;
-  width: 40px;
+  height: 35px;
+  width: 35px;
   background-color: rgb(191, 90, 9);
   border-radius: 100%;
-  padding: 10px;
+  padding: 8px;
 }
+
+#social_media img:hover {
+  background-color: rgb(163, 77, 7);
+}
+
 #social_media li {
   margin: 0 0.5rem;
 }
@@ -264,5 +361,7 @@ footer img {
   h3 {
     font-size: 1.5rem;
     max-height: 100px;
+    width: 300px;
+    padding: 0;
   }
 }
