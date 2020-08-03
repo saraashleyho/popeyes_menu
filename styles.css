@@ -7,13 +7,20 @@
   box-sizing: border-box;
 }
 
-/*HEADING FORMATTING*/
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
 
 nav {
   background-color: white;
   display: flex;
   justify-content: space-between;
   font-family: "chicken_sans_bold";
+  height: 90px;
 }
 
 h1 img {
@@ -25,6 +32,7 @@ h1 img {
   display: flex;
   margin: 1rem;
   font-size: 13pt;
+  color: rgb(32, 32, 32);
 }
 
 #navlinks a {
@@ -45,12 +53,24 @@ h1 img {
   height: 20px;
 }
 
+#shopping_bag img:hover {
+  fill: #f8f7f6;
+}
+
 #shopping_bag {
   color: rgb(191, 90, 9);
   border: 0.05rem solid rgb(191, 90, 9);
   border-radius: 40%;
   padding: 0.5rem 1rem;
+  cursor: pointer;
+  width: 80px;
 }
+
+#shopping_bag:hover {
+  background-color: rgb(191, 90, 9);
+  color: white;
+}
+
 #signup {
   background-color: rgb(191, 90, 9);
   padding: 0.5rem 2.5rem;
@@ -66,7 +86,12 @@ li {
 }
 
 nav li {
-  margin: 1rem;
+  margin: 0.8rem;
+}
+
+#mainpage {
+  position: relative;
+  top: 115px;
 }
 
 body {
@@ -91,13 +116,19 @@ h2 {
   color: gray;
   display: flex;
   justify-content: center;
-  margin: 0.2rem;
+  margin: 0rem;
   padding: 0;
-  height: 20px;
+  height: 25px;
+  border-top: 2px solid whitesmoke;
 }
 
 #subheading li {
   margin: 0.2rem 0.7rem 0.3rem 0;
+}
+
+#subheading a {
+  text-decoration: none;
+  color: rgb(191, 90, 9);
 }
 
 h3 {
@@ -128,7 +159,7 @@ section p {
   color: rgb(191, 90, 9);
   font-weight: bold;
   font-family: Helvetica, sans-serif;
-  margin: 0rem 1rem;
+  margin: 0rem 1rem 1.5rem;
 }
 
 section img {
@@ -148,6 +179,7 @@ h4 {
 h4 a {
   text-decoration: none;
   color: black;
+  padding: 230px 60px 50px 0;
 }
 nav p {
   font-family: Helvetica, sans-serif;
@@ -218,4 +250,19 @@ footer img {
   height: 150px;
   width: 200px;
   margin: 0 10rem 0 0;
+}
+
+#whitespace {
+  height: 80px;
+  background-color: white;
+}
+
+@media (max-width: 60rem) {
+  h2 {
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+    max-height: 100px;
+  }
 }
