@@ -17,7 +17,7 @@ const body = event => {
   const userId = localStorage.getItem('userId');
 
   const url = '/clicks';
-  await fetch(url, {
+  fetch(url, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -28,7 +28,7 @@ const body = event => {
       
     }),
   });
-  await tallyVotes();
+  
 }
 
 
