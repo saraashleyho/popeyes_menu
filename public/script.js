@@ -4,27 +4,33 @@ if (!localStorage.getItem('userId')) {
 }
 
 
-const handleClick = event => {
-  console.log(event)
-}
+//const handleClick = event => {
+  //console.log(event)
+//}
 
-const body = event => {
+const handleClick = async event => {
   const pageX = Math.round(event.pageX);
   const pageY = Math.round(event.pageY);
   const findFirstDataId = event.path.find(item => item.dataset.trackingid !== undefined);
-  const theItemThatGotClicked = event.Target;
-  const howLongBeforetheClick = Math.round(event.timestamp);
+  const trackingid = findFirstDataId.dataset.trackingid;
+  const theItemThatGotClicked = event.target.outerHTML;
+  const howLongBeforetheClick = Math.round(event.timeStamp);
   const userId = localStorage.getItem('userId');
 
   const url = '/clicks';
-  fetch(url, {
+  await fetch(url, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
       Accept: 'application/json',
     },
     body: JSON.stringify({
-      user: userId,
+      userId: userId,
+      pageX: pageX,
+      pageY: pageY,
+      findFirstDataId: trackingid,
+      theItemThatGotClicked: theItemThatGotClicked,
+      howLongBeforetheClick: howLongBeforetheClick
       
     }),
   });
